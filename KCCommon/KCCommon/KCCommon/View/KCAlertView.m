@@ -14,8 +14,10 @@
 {
     self = [super init];
     if (self) {
-        self.titleFont = [UIFont systemFontOfSize:16];
-        
+        self.titleFont = [UIFont systemFontOfSize:18];
+        self.titleColor = [UIColor darkTextColor];
+        self.cancelTitleColor = [UIColor darkGrayColor];
+        self.destructiveTitleColor = [UIColor redColor];
     }
     return self;
 }
@@ -37,11 +39,42 @@
 
 @implementation KCAlertView
 
++ (instancetype)alertViewWithStyle:(KCAlertViewStyle)style title:(NSString *)title detail:(NSString *)detail actions:(NSArray <KCAlertAction *>*)actions
+{
+    KCAlertView *alertView = [self alertView];
+    alertView.title = title;
+    alertView.style = style;
+    alertView.detail = detail;
+    alertView.actions = actions;
+    
+    return alertView;
+}
+
 + (instancetype)alertView
 {
+    KCAlertView *alertView = [[self alloc] init];
+    KCAlertView *appearance = [self appearance];
+    alertView.titleFont = appearance.titleFont;
+    alertView.titleColor = appearance.titleColor;
+    alertView.detailFont = appearance.detailFont;
+    alertView.detailColor = appearance.detailColor;
+    alertView.actionDismiss = appearance.actionDismiss;
+    alertView.separatorColor = appearance.separatorColor;
+    alertView.contentBackgroundColor = appearance.contentBackgroundColor;
+    
     return [self new];
 }
 
+
++ (instancetype)appearance
+{
+    static id instance_;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        instance_ = [[self alloc] init];
+    });
+    return instance_;
+}
 
 - (UIControl *)controlView
 {
@@ -60,6 +93,16 @@
     if (self.backgroundDismiss) {
         [self dismiss];
     }
+}
+
+- (void)setContentBackgroundColor:(UIColor *)contentBackgroundColor
+{
+    self.contentView.contentView.backgroundColor = contentBackgroundColor;
+}
+
+- (UIColor *)contentBackgroundColor
+{
+    return self.contentView.contentView.backgroundColor;
 }
 
 - (void)setTitle:(NSString *)title
@@ -154,6 +197,8 @@
     if (!_contentView) {
         UIBlurEffect *effect = [UIBlurEffect effectWithStyle:UIBlurEffectStyleExtraLight];
         UIVisualEffectView *effectView = [[UIVisualEffectView  alloc] initWithEffect:effect];
+//        effectView.backgroundColor = [UIColor whiteColor];
+//        effectView.contentView.backgroundColor = [UIColor whiteColor];
         effectView.clipsToBounds = YES;
         _contentView = effectView;
     }
@@ -200,16 +245,16 @@
         [self addSubview:self.contentView];
         [self.contentView.contentView addSubview:self.titleLabel];
         [self.contentView.contentView addSubview:self.detailLabel];
-        
+        self.separatorColor = [UIColor colorWithWhite:0 alpha:0.1];
         self.actionDismiss = YES;
-        self.alpha = 0;
+        self.controlView.alpha = 0;
     }
     return self;
 }
 
-- (void)layoutSubviews
+- (void)setupLayout
 {
-    [super layoutSubviews];
+//    [super layoutSubviews];
     
     self.controlView.frame = self.bounds;
     
@@ -450,6 +495,7 @@
         self.contentView.center = CGPointMake(self.bounds.size.width * 0.5, self.bounds.size.height - self.contentView.frame.size.height * 0.5);
     }
     
+    
 }
 
 - (void)actionBtnClick:(UIButton *)btn
@@ -480,18 +526,15 @@
     [actionBtn addTarget:self action:@selector(actionBtnClick:) forControlEvents:UIControlEventTouchUpInside];
     switch (action.style) {
         case KCAlertActionStyleCancel:
-            [actionBtn setTitleColor:[UIColor darkGrayColor] forState:0];
+            [actionBtn setTitleColor:action.cancelTitleColor forState:0];
             break;
         case KCAlertActionStyleDefault:
             
-            [actionBtn setTitleColor:[UIColor darkTextColor] forState:0];
+            [actionBtn setTitleColor:action.titleColor forState:0];
             break;
         case KCAlertActionStyleDestructive:
             
-            [actionBtn setTitleColor:[UIColor redColor] forState:0];
-            break;
-        case KCAlertActionStyleCustom:
-            [actionBtn setTitleColor:action.titleColor forState:0];
+            [actionBtn setTitleColor:action.destructiveTitleColor forState:0];
             break;
             
         default:
@@ -531,25 +574,35 @@
         [self.contentView.contentView addSubview:actionBtn];
         
         UIView *s = [UIView new];
-        s.backgroundColor = [UIColor colorWithWhite:0 alpha:0.1];
+        s.backgroundColor = self.separatorColor;
+//        s.backgroundColor = [UIColor colorWithRed:221/255.0 green:221/255.0 blue:221/255.0 alpha:1];
         [self.actionSeperators addObject:s];
         [self.contentView.contentView addSubview:s];
     }
     
-    [self setNeedsLayout];
+    
+    [self setupLayout];
     
     if (self.style == KCAlertViewStyleAlert) {
         
-        [UIView animateWithDuration:0.35 animations:^{
+        
+        self.contentView.transform = CGAffineTransformMakeTranslation(0, -CGRectGetMaxY(self.contentView.frame));
+//        self.contentView.transform = CGAffineTransformMakeScale(0.001, 0.001);
+        [UIView animateWithDuration:0.35 delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
             
-            self.alpha = 1;
+            self.controlView.alpha = 1;
+            self.contentView.transform = CGAffineTransformIdentity;
+            
+        } completion:^(BOOL finished) {
+            
         }];
     }else {
         
         self.contentView.transform = CGAffineTransformMakeTranslation(0, self.contentView.frame.size.height);
-        self.alpha = 1;
-        self.controlView.alpha = 0;
+        
         [UIView animateWithDuration:0.35 delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
+            
+            
             
             self.controlView.alpha = 1;
             
@@ -563,24 +616,16 @@
     
 }
 
-- (void)performShowAnimation:(void(^)())compltion
-{
-    
-}
-
-- (void)performDismissAnimation:(void(^)())compltion
-{
-    
-}
-
 - (void)dismiss
 {
     if (self.style == KCAlertViewStyleAlert) {
         
-        [UIView animateWithDuration:0.35 animations:^{
-            //        self.contentView.transform = CGAffineTransformMakeScale(0.001, 0.001);
-            //        self.controlView.alpha = 0;
-            self.alpha = 0;
+        [UIView animateWithDuration:0.35 delay:0 options:UIViewAnimationOptionCurveEaseIn animations:^{
+            
+            self.contentView.transform = CGAffineTransformMakeTranslation(0, self.frame.size.height);
+            
+                self.controlView.alpha = 0;
+            
         } completion:^(BOOL finished) {
             self.actions = nil;
             [self.actionButtons makeObjectsPerformSelector:@selector(removeFromSuperview)];
@@ -588,10 +633,11 @@
             [self.actionSeperators removeAllObjects];
             [self.actionButtons removeAllObjects];
             [self removeFromSuperview];
+            
         }];
     }else {
         
-        [UIView animateWithDuration:0.35 delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
+        [UIView animateWithDuration:0.35 delay:0 options:UIViewAnimationOptionCurveEaseIn animations:^{
             
             self.controlView.alpha = 0;
             
@@ -604,6 +650,7 @@
             [self.actionSeperators removeAllObjects];
             [self.actionButtons removeAllObjects];
             [self removeFromSuperview];
+//            !completion ? : completion();
         }];
         
         

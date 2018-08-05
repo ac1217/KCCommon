@@ -184,7 +184,9 @@
     
     [view addSubview:self];
     self.frame = view.bounds;
-    [self setNeedsLayout];
+    
+    
+    [self layoutIfNeeded];
 //    self.backgroundColor = [UIColor colorWithWhite:0 alpha:0.5];
     
     [UIView animateWithDuration:0.25 animations:^{

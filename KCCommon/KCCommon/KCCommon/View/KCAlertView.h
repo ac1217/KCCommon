@@ -12,8 +12,7 @@
 typedef enum : NSUInteger {
     KCAlertActionStyleDefault = 0,
     KCAlertActionStyleCancel,
-    KCAlertActionStyleDestructive,
-    KCAlertActionStyleCustom
+    KCAlertActionStyleDestructive
 } KCAlertActionStyle;
 
 @interface KCAlertAction: NSObject
@@ -23,6 +22,8 @@ typedef enum : NSUInteger {
 @property (nonatomic,copy) NSString *title;
 @property (nonatomic,strong) UIImage *image;
 @property (nonatomic,strong) UIColor *titleColor;
+@property (nonatomic,strong) UIColor *cancelTitleColor;
+@property (nonatomic,strong) UIColor *destructiveTitleColor;
 @property (nonatomic,strong) UIFont *titleFont;
 
 @property (nonatomic,strong) NSAttributedString *attributedTitle;
@@ -36,6 +37,7 @@ typedef enum : NSUInteger {
 
 @interface KCAlertView : UIView
 
++ (instancetype)alertViewWithStyle:(KCAlertViewStyle)style title:(NSString *)title detail:(NSString *)detail actions:(NSArray <KCAlertAction *>*)actions;
 
 + (instancetype)alertView;
 
@@ -47,13 +49,16 @@ typedef enum : NSUInteger {
 @property (nonatomic,strong) NSAttributedString *attributedTitle;
 @property (nonatomic,strong) NSAttributedString *attributedDetail;
 
-@property (nonatomic,strong) UIColor *titleColor;
-@property (nonatomic,strong) UIFont *titleFont;
-@property (nonatomic,strong) UIColor *detailColor;
-@property (nonatomic,strong) UIFont *detailFont;
+@property (nonatomic,strong) UIColor *titleColor;// apprance
+@property (nonatomic,strong) UIFont *titleFont;// apprance
+@property (nonatomic,strong) UIColor *detailColor;// apprance
+@property (nonatomic,strong) UIFont *detailFont;// apprance
+@property (nonatomic,strong) UIColor *contentBackgroundColor;// apprance
+@property (nonatomic,strong) UIColor *separatorColor;// apprance
+// default YES
+@property (nonatomic,assign) BOOL actionDismiss;// apprance
 
 @property (nonatomic,assign) KCAlertViewStyle style;
-@property (nonatomic,assign) BOOL actionDismiss;
 @property (nonatomic,assign) BOOL backgroundDismiss;
 
 @property (nonatomic,strong) NSArray <KCAlertAction *>*actions;

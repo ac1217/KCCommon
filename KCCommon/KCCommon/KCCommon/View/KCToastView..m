@@ -194,7 +194,9 @@
             break;
     }
     
-    [self setNeedsLayout];
+//    [self setNeedsLayout];
+    
+    [self layoutIfNeeded];
     
 //    self.contentView.transform = CGAffineTransformMakeScale(0.001, 0.001);
     [UIView animateWithDuration:0.25 delay:0 usingSpringWithDamping:0.5 initialSpringVelocity:0.5 options:UIViewAnimationOptionCurveEaseInOut animations:^{
