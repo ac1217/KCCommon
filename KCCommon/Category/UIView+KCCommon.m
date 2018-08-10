@@ -69,6 +69,7 @@
 - (void)kc_hideEmptyView
 {
     [self.kc_emptyView dismiss];
+    
 }
 
 - (void)kc_showToastView
@@ -84,16 +85,6 @@
 }
 
 
-- (void)kc_showAlertView
-{
-    
-    [self.kc_alertView showInView:self];
-}
-- (void)kc_hideAlertView
-{
-    
-    [self.kc_alertView dismiss];
-}
 
 
 - (void)kc_showSuccessToastView:(NSString *)text

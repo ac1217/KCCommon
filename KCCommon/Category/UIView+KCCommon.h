@@ -11,11 +11,13 @@
 
 @interface UIView (KCCommon)
 
+// 一个view对应一个
 @property (nonatomic,strong,readonly) KCEmptyView *kc_emptyView;
 @property (nonatomic,strong,readonly) KCToastView *kc_toastView;
 @property (nonatomic,strong,readonly) KCAlertView *kc_alertView;
 
 
+// 使用方法项目具体定义
 /*
  - (void)kc_showEmptyView;
  - (void)kc_hideEmptyView;
