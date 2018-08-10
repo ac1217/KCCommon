@@ -15,12 +15,11 @@
 		07741584211427F500A238BA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 07741583211427F500A238BA /* main.m */; };
 		0774158E211427F500A238BA /* KCCommonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0774158D211427F500A238BA /* KCCommonTests.m */; };
 		07741599211427F600A238BA /* KCCommonUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 07741598211427F600A238BA /* KCCommonUITests.m */; };
-		077415B62114281100A238BA /* UIView+KCCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 077415A92114281100A238BA /* UIView+KCCommon.m */; };
-		077415B72114281100A238BA /* UIViewController+KCCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 077415AB2114281100A238BA /* UIViewController+KCCommon.m */; };
-		077415B82114281100A238BA /* KCAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 077415AF2114281100A238BA /* KCAlertView.m */; };
-		077415B92114281100A238BA /* KCEmptyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 077415B12114281100A238BA /* KCEmptyView.m */; };
-		077415BA2114281100A238BA /* KCNavigationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 077415B32114281100A238BA /* KCNavigationView.m */; };
-		077415BB2114281100A238BA /* KCToastView..m in Sources */ = {isa = PBXBuildFile; fileRef = 077415B52114281100A238BA /* KCToastView..m */; };
+		07F7FF4A211D957B00613DE9 /* UIView+KCCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F7FF3E211D957B00613DE9 /* UIView+KCCommon.m */; };
+		07F7FF4B211D957B00613DE9 /* UIViewController+KCCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F7FF40211D957B00613DE9 /* UIViewController+KCCommon.m */; };
+		6BCBCF43D2871F4FD652E916 /* libPods-KCCommon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A2E1BE61A468CF67BE450BEF /* libPods-KCCommon.a */; };
+		9A56CB924AE9C7EFC3D52260 /* libPods-KCCommonTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EFCC72885A7CBEB46D5FCC1 /* libPods-KCCommonTests.a */; };
+		C17DD055D5CE92A8871F3E84 /* libPods-KCCommonUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A602DBFF6ABBAA263B55AA20 /* libPods-KCCommonUITests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,18 +56,19 @@
 		07741594211427F600A238BA /* KCCommonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KCCommonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		07741598211427F600A238BA /* KCCommonUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KCCommonUITests.m; sourceTree = "<group>"; };
 		0774159A211427F600A238BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		077415A82114281100A238BA /* UIView+KCCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+KCCommon.h"; sourceTree = "<group>"; };
-		077415A92114281100A238BA /* UIView+KCCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+KCCommon.m"; sourceTree = "<group>"; };
-		077415AA2114281100A238BA /* UIViewController+KCCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+KCCommon.h"; sourceTree = "<group>"; };
-		077415AB2114281100A238BA /* UIViewController+KCCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+KCCommon.m"; sourceTree = "<group>"; };
-		077415AE2114281100A238BA /* KCAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCAlertView.h; sourceTree = "<group>"; };
-		077415AF2114281100A238BA /* KCAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCAlertView.m; sourceTree = "<group>"; };
-		077415B02114281100A238BA /* KCEmptyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCEmptyView.h; sourceTree = "<group>"; };
-		077415B12114281100A238BA /* KCEmptyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCEmptyView.m; sourceTree = "<group>"; };
-		077415B22114281100A238BA /* KCNavigationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCNavigationView.h; sourceTree = "<group>"; };
-		077415B32114281100A238BA /* KCNavigationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCNavigationView.m; sourceTree = "<group>"; };
-		077415B42114281100A238BA /* KCToastView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCToastView.h; sourceTree = "<group>"; };
-		077415B52114281100A238BA /* KCToastView..m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCToastView..m; sourceTree = "<group>"; };
+		07F7FF3D211D957B00613DE9 /* UIView+KCCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+KCCommon.h"; sourceTree = "<group>"; };
+		07F7FF3E211D957B00613DE9 /* UIView+KCCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+KCCommon.m"; sourceTree = "<group>"; };
+		07F7FF3F211D957B00613DE9 /* UIViewController+KCCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+KCCommon.h"; sourceTree = "<group>"; };
+		07F7FF40211D957B00613DE9 /* UIViewController+KCCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+KCCommon.m"; sourceTree = "<group>"; };
+		0E0DB9C4FB963E2A04B0681D /* Pods-KCCommon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KCCommon.release.xcconfig"; path = "Pods/Target Support Files/Pods-KCCommon/Pods-KCCommon.release.xcconfig"; sourceTree = "<group>"; };
+		51A7F4AB7A8B08B71617667F /* Pods-KCCommonTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KCCommonTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KCCommonTests/Pods-KCCommonTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8EFCC72885A7CBEB46D5FCC1 /* libPods-KCCommonTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KCCommonTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2E1BE61A468CF67BE450BEF /* libPods-KCCommon.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KCCommon.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A602DBFF6ABBAA263B55AA20 /* libPods-KCCommonUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KCCommonUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAB52EB0A50BE9DF4F3A1CAA /* Pods-KCCommon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KCCommon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KCCommon/Pods-KCCommon.debug.xcconfig"; sourceTree = "<group>"; };
+		BBE5E9A648ED900EBE58DDF5 /* Pods-KCCommonTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KCCommonTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KCCommonTests/Pods-KCCommonTests.release.xcconfig"; sourceTree = "<group>"; };
+		CF7EDF13BB7BB68623454F7B /* Pods-KCCommonUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KCCommonUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KCCommonUITests/Pods-KCCommonUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D830A022DE1E6F725D23FC73 /* Pods-KCCommonUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KCCommonUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KCCommonUITests/Pods-KCCommonUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BCBCF43D2871F4FD652E916 /* libPods-KCCommon.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A56CB924AE9C7EFC3D52260 /* libPods-KCCommonTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C17DD055D5CE92A8871F3E84 /* libPods-KCCommonUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,6 +106,8 @@
 				0774158C211427F500A238BA /* KCCommonTests */,
 				07741597211427F600A238BA /* KCCommonUITests */,
 				07741572211427F400A238BA /* Products */,
+				F8B1A5B0B66076001A80092C /* Pods */,
+				C6603867F07373C5B0F9FF63 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,7 +124,7 @@
 		07741573211427F400A238BA /* KCCommon */ = {
 			isa = PBXGroup;
 			children = (
-				077415A62114281100A238BA /* KCCommon */,
+				07F7FF3B211D957B00613DE9 /* KCCommon */,
 				07741574211427F400A238BA /* AppDelegate.h */,
 				07741575211427F400A238BA /* AppDelegate.m */,
 				07741577211427F400A238BA /* ViewController.h */,
@@ -151,39 +156,47 @@
 			path = KCCommonUITests;
 			sourceTree = "<group>";
 		};
-		077415A62114281100A238BA /* KCCommon */ = {
+		07F7FF3B211D957B00613DE9 /* KCCommon */ = {
 			isa = PBXGroup;
 			children = (
-				077415A72114281100A238BA /* Category */,
-				077415AD2114281100A238BA /* View */,
+				07F7FF3C211D957B00613DE9 /* Category */,
 			);
-			path = KCCommon;
+			name = KCCommon;
+			path = ../../KCCommon;
 			sourceTree = "<group>";
 		};
-		077415A72114281100A238BA /* Category */ = {
+		07F7FF3C211D957B00613DE9 /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				077415A82114281100A238BA /* UIView+KCCommon.h */,
-				077415A92114281100A238BA /* UIView+KCCommon.m */,
-				077415AA2114281100A238BA /* UIViewController+KCCommon.h */,
-				077415AB2114281100A238BA /* UIViewController+KCCommon.m */,
+				07F7FF3D211D957B00613DE9 /* UIView+KCCommon.h */,
+				07F7FF3E211D957B00613DE9 /* UIView+KCCommon.m */,
+				07F7FF3F211D957B00613DE9 /* UIViewController+KCCommon.h */,
+				07F7FF40211D957B00613DE9 /* UIViewController+KCCommon.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
 		};
-		077415AD2114281100A238BA /* View */ = {
+		C6603867F07373C5B0F9FF63 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				077415AE2114281100A238BA /* KCAlertView.h */,
-				077415AF2114281100A238BA /* KCAlertView.m */,
-				077415B02114281100A238BA /* KCEmptyView.h */,
-				077415B12114281100A238BA /* KCEmptyView.m */,
-				077415B22114281100A238BA /* KCNavigationView.h */,
-				077415B32114281100A238BA /* KCNavigationView.m */,
-				077415B42114281100A238BA /* KCToastView.h */,
-				077415B52114281100A238BA /* KCToastView..m */,
+				A2E1BE61A468CF67BE450BEF /* libPods-KCCommon.a */,
+				8EFCC72885A7CBEB46D5FCC1 /* libPods-KCCommonTests.a */,
+				A602DBFF6ABBAA263B55AA20 /* libPods-KCCommonUITests.a */,
 			);
-			path = View;
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F8B1A5B0B66076001A80092C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AAB52EB0A50BE9DF4F3A1CAA /* Pods-KCCommon.debug.xcconfig */,
+				0E0DB9C4FB963E2A04B0681D /* Pods-KCCommon.release.xcconfig */,
+				51A7F4AB7A8B08B71617667F /* Pods-KCCommonTests.debug.xcconfig */,
+				BBE5E9A648ED900EBE58DDF5 /* Pods-KCCommonTests.release.xcconfig */,
+				CF7EDF13BB7BB68623454F7B /* Pods-KCCommonUITests.debug.xcconfig */,
+				D830A022DE1E6F725D23FC73 /* Pods-KCCommonUITests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,9 +206,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0774159D211427F600A238BA /* Build configuration list for PBXNativeTarget "KCCommon" */;
 			buildPhases = (
+				A9F2D777FFAAD0F1EE2DDB3C /* [CP] Check Pods Manifest.lock */,
 				0774156D211427F400A238BA /* Sources */,
 				0774156E211427F400A238BA /* Frameworks */,
 				0774156F211427F400A238BA /* Resources */,
+				B0E0F9430C6DC55F37E87FDE /* [CP] Embed Pods Frameworks */,
+				7A204DAD3496ADE9EAD2A5E0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -210,9 +226,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 077415A0211427F600A238BA /* Build configuration list for PBXNativeTarget "KCCommonTests" */;
 			buildPhases = (
+				587832D47B7AFE877AA79DA1 /* [CP] Check Pods Manifest.lock */,
 				07741585211427F500A238BA /* Sources */,
 				07741586211427F500A238BA /* Frameworks */,
 				07741587211427F500A238BA /* Resources */,
+				43CCE65675194916E59FC164 /* [CP] Embed Pods Frameworks */,
+				0766322B7D93C7BA819697E8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -228,9 +247,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 077415A3211427F600A238BA /* Build configuration list for PBXNativeTarget "KCCommonUITests" */;
 			buildPhases = (
+				D04589891F5C17E9CB15054E /* [CP] Check Pods Manifest.lock */,
 				07741590211427F600A238BA /* Sources */,
 				07741591211427F600A238BA /* Frameworks */,
 				07741592211427F600A238BA /* Resources */,
+				C04D39E36A1802FB86BD85E6 /* [CP] Embed Pods Frameworks */,
+				EE0AB680165B10ED98A4CD7F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -311,20 +333,163 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0766322B7D93C7BA819697E8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KCCommonTests/Pods-KCCommonTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		43CCE65675194916E59FC164 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KCCommonTests/Pods-KCCommonTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		587832D47B7AFE877AA79DA1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KCCommonTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7A204DAD3496ADE9EAD2A5E0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KCCommon/Pods-KCCommon-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A9F2D777FFAAD0F1EE2DDB3C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KCCommon-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B0E0F9430C6DC55F37E87FDE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KCCommon/Pods-KCCommon-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C04D39E36A1802FB86BD85E6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KCCommonUITests/Pods-KCCommonUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D04589891F5C17E9CB15054E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KCCommonUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE0AB680165B10ED98A4CD7F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KCCommonUITests/Pods-KCCommonUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0774156D211427F400A238BA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				077415B72114281100A238BA /* UIViewController+KCCommon.m in Sources */,
 				07741579211427F400A238BA /* ViewController.m in Sources */,
 				07741584211427F500A238BA /* main.m in Sources */,
 				07741576211427F400A238BA /* AppDelegate.m in Sources */,
-				077415B92114281100A238BA /* KCEmptyView.m in Sources */,
-				077415B62114281100A238BA /* UIView+KCCommon.m in Sources */,
-				077415BA2114281100A238BA /* KCNavigationView.m in Sources */,
-				077415BB2114281100A238BA /* KCToastView..m in Sources */,
-				077415B82114281100A238BA /* KCAlertView.m in Sources */,
+				07F7FF4A211D957B00613DE9 /* UIView+KCCommon.m in Sources */,
+				07F7FF4B211D957B00613DE9 /* UIViewController+KCCommon.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -491,6 +656,7 @@
 		};
 		0774159E211427F600A238BA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AAB52EB0A50BE9DF4F3A1CAA /* Pods-KCCommon.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -508,6 +674,7 @@
 		};
 		0774159F211427F600A238BA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E0DB9C4FB963E2A04B0681D /* Pods-KCCommon.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -525,6 +692,7 @@
 		};
 		077415A1211427F600A238BA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51A7F4AB7A8B08B71617667F /* Pods-KCCommonTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -544,6 +712,7 @@
 		};
 		077415A2211427F600A238BA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBE5E9A648ED900EBE58DDF5 /* Pods-KCCommonTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -563,6 +732,7 @@
 		};
 		077415A4211427F600A238BA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF7EDF13BB7BB68623454F7B /* Pods-KCCommonUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9W8KXJ7KY8;
@@ -581,6 +751,7 @@
 		};
 		077415A5211427F600A238BA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D830A022DE1E6F725D23FC73 /* Pods-KCCommonUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9W8KXJ7KY8;

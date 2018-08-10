@@ -7,9 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "KCEmptyView.h"
-#import "KCToastView.h"
-#import "KCAlertView.h"
+#import "KCComponent.h"
 
 @interface UIView (KCCommon)
 
@@ -17,16 +15,16 @@
 @property (nonatomic,strong,readonly) KCToastView *kc_toastView;
 @property (nonatomic,strong,readonly) KCAlertView *kc_alertView;
 
-- (void)kc_showEmptyView;
-- (void)kc_hideEmptyView;
-
-- (void)kc_showToastView;
-- (void)kc_hideToastView;
-
-- (void)kc_showAlertView;
-- (void)kc_hideAlertView;
 
 /*
+ - (void)kc_showEmptyView;
+ - (void)kc_hideEmptyView;
+ 
+ - (void)kc_showToastView;
+ - (void)kc_hideToastView;
+ 
+ - (void)kc_showAlertView;
+ - (void)kc_hideAlertView;
 - (void)kc_showSuccessToastView:(NSString *)text;
 - (void)kc_showErrorToastView:(NSString *)text;
 - (void)kc_showLoadingToastView:(NSString *)text;

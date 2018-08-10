@@ -59,6 +59,7 @@
     
 }
 
+/*
 - (void)kc_showEmptyView
 {
     
@@ -94,7 +95,7 @@
     [self.kc_alertView dismiss];
 }
 
-/*
+
 - (void)kc_showSuccessToastView:(NSString *)text
 {
     self.kc_toastView.style = KCToastViewStyleSuccess;

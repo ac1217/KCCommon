@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "KCNavigationView.h"
+#import "KCComponent.h"
 
 @interface UIViewController (KCCommon)<UITableViewDelegate, UITableViewDataSource, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource>
 
