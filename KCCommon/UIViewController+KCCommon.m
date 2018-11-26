@@ -9,27 +9,27 @@
 #import "UIViewController+KCCommon.h"
 #import <objc/runtime.h>
 
-static NSString *const kc_tableViewStyleKey = @"kc_tableViewStyle";
-static NSString *const kc_collectionViewLayoutKey = @"kc_collectionViewLayout";
+//static NSString *const kc_tableViewStyleKey = @"kc_tableViewStyle";
+//static NSString *const kc_collectionViewLayoutKey = @"kc_collectionViewLayout";
 
 @implementation UIViewController (KCCommon)
 
 - (void)setKc_collectionViewLayout:(UICollectionViewLayout *)kc_collectionViewLayout
 {
 
-    objc_setAssociatedObject(self, (__bridge const void * _Nonnull)(kc_collectionViewLayoutKey), kc_collectionViewLayout, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    objc_setAssociatedObject(self, "kc_collectionViewLayout", kc_collectionViewLayout, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     
 //    self.kc_collectionView.collectionViewLayout = kc_collectionViewLayout;
 }
 
 - (UICollectionViewLayout *)kc_collectionViewLayout
 {
-    UICollectionViewLayout *collectionViewLayout = objc_getAssociatedObject(self, (__bridge const void * _Nonnull)(kc_collectionViewLayoutKey));
+    UICollectionViewLayout *collectionViewLayout = objc_getAssociatedObject(self, "kc_collectionViewLayout");
     
     if (!collectionViewLayout) {
         collectionViewLayout = [[UICollectionViewFlowLayout alloc] init];
         
-        objc_setAssociatedObject(self, (__bridge const void * _Nonnull)(kc_collectionViewLayoutKey), collectionViewLayout, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+        objc_setAssociatedObject(self, "kc_collectionViewLayout", collectionViewLayout, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     }
     
     return collectionViewLayout;
@@ -38,7 +38,7 @@ static NSString *const kc_collectionViewLayoutKey = @"kc_collectionViewLayout";
 
 - (UICollectionView *)kc_collectionView
 {
-    UICollectionView *collectionView = objc_getAssociatedObject(self, _cmd);
+    UICollectionView *collectionView = objc_getAssociatedObject(self, "kc_collectionView");
     
     if (!collectionView) {
         
@@ -70,12 +70,12 @@ static NSString *const kc_collectionViewLayoutKey = @"kc_collectionViewLayout";
 /**************TableView*****************/
 - (void)setKc_tableViewStyle:(UITableViewStyle)kc_tableViewStyle
 {
-    objc_setAssociatedObject(self, (__bridge const void * _Nonnull)(kc_tableViewStyleKey), @(kc_tableViewStyle), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    objc_setAssociatedObject(self, "kc_tableViewStyle", @(kc_tableViewStyle), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
 - (UITableViewStyle)kc_tableViewStyle
 {
-    return [objc_getAssociatedObject(self, (__bridge const void * _Nonnull)(kc_tableViewStyleKey)) integerValue];
+    return [objc_getAssociatedObject(self, "kc_tableViewStyle") integerValue];
 }
 
 - (UITableView *)kc_tableView

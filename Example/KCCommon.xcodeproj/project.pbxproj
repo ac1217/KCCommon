@@ -15,8 +15,7 @@
 		07741584211427F500A238BA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 07741583211427F500A238BA /* main.m */; };
 		0774158E211427F500A238BA /* KCCommonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0774158D211427F500A238BA /* KCCommonTests.m */; };
 		07741599211427F600A238BA /* KCCommonUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 07741598211427F600A238BA /* KCCommonUITests.m */; };
-		07F7FF4A211D957B00613DE9 /* UIView+KCCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F7FF3E211D957B00613DE9 /* UIView+KCCommon.m */; };
-		07F7FF4B211D957B00613DE9 /* UIViewController+KCCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F7FF40211D957B00613DE9 /* UIViewController+KCCommon.m */; };
+		079C609B219EA093009D7264 /* UIViewController+KCCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 079C609A219EA093009D7264 /* UIViewController+KCCommon.m */; };
 		6BCBCF43D2871F4FD652E916 /* libPods-KCCommon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A2E1BE61A468CF67BE450BEF /* libPods-KCCommon.a */; };
 		9A56CB924AE9C7EFC3D52260 /* libPods-KCCommonTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EFCC72885A7CBEB46D5FCC1 /* libPods-KCCommonTests.a */; };
 		C17DD055D5CE92A8871F3E84 /* libPods-KCCommonUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A602DBFF6ABBAA263B55AA20 /* libPods-KCCommonUITests.a */; };
@@ -56,10 +55,8 @@
 		07741594211427F600A238BA /* KCCommonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KCCommonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		07741598211427F600A238BA /* KCCommonUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KCCommonUITests.m; sourceTree = "<group>"; };
 		0774159A211427F600A238BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		07F7FF3D211D957B00613DE9 /* UIView+KCCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+KCCommon.h"; sourceTree = "<group>"; };
-		07F7FF3E211D957B00613DE9 /* UIView+KCCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+KCCommon.m"; sourceTree = "<group>"; };
-		07F7FF3F211D957B00613DE9 /* UIViewController+KCCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+KCCommon.h"; sourceTree = "<group>"; };
-		07F7FF40211D957B00613DE9 /* UIViewController+KCCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+KCCommon.m"; sourceTree = "<group>"; };
+		079C6099219EA093009D7264 /* UIViewController+KCCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+KCCommon.h"; sourceTree = "<group>"; };
+		079C609A219EA093009D7264 /* UIViewController+KCCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+KCCommon.m"; sourceTree = "<group>"; };
 		0E0DB9C4FB963E2A04B0681D /* Pods-KCCommon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KCCommon.release.xcconfig"; path = "Pods/Target Support Files/Pods-KCCommon/Pods-KCCommon.release.xcconfig"; sourceTree = "<group>"; };
 		51A7F4AB7A8B08B71617667F /* Pods-KCCommonTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KCCommonTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KCCommonTests/Pods-KCCommonTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8EFCC72885A7CBEB46D5FCC1 /* libPods-KCCommonTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KCCommonTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -124,7 +121,7 @@
 		07741573211427F400A238BA /* KCCommon */ = {
 			isa = PBXGroup;
 			children = (
-				07F7FF3B211D957B00613DE9 /* KCCommon */,
+				079C6098219EA093009D7264 /* KCCommon */,
 				07741574211427F400A238BA /* AppDelegate.h */,
 				07741575211427F400A238BA /* AppDelegate.m */,
 				07741577211427F400A238BA /* ViewController.h */,
@@ -156,24 +153,14 @@
 			path = KCCommonUITests;
 			sourceTree = "<group>";
 		};
-		07F7FF3B211D957B00613DE9 /* KCCommon */ = {
+		079C6098219EA093009D7264 /* KCCommon */ = {
 			isa = PBXGroup;
 			children = (
-				07F7FF3C211D957B00613DE9 /* Category */,
+				079C6099219EA093009D7264 /* UIViewController+KCCommon.h */,
+				079C609A219EA093009D7264 /* UIViewController+KCCommon.m */,
 			);
 			name = KCCommon;
 			path = ../../KCCommon;
-			sourceTree = "<group>";
-		};
-		07F7FF3C211D957B00613DE9 /* Category */ = {
-			isa = PBXGroup;
-			children = (
-				07F7FF3D211D957B00613DE9 /* UIView+KCCommon.h */,
-				07F7FF3E211D957B00613DE9 /* UIView+KCCommon.m */,
-				07F7FF3F211D957B00613DE9 /* UIViewController+KCCommon.h */,
-				07F7FF40211D957B00613DE9 /* UIViewController+KCCommon.m */,
-			);
-			path = Category;
 			sourceTree = "<group>";
 		};
 		C6603867F07373C5B0F9FF63 /* Frameworks */ = {
@@ -486,10 +473,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				07741579211427F400A238BA /* ViewController.m in Sources */,
+				079C609B219EA093009D7264 /* UIViewController+KCCommon.m in Sources */,
 				07741584211427F500A238BA /* main.m in Sources */,
 				07741576211427F400A238BA /* AppDelegate.m in Sources */,
-				07F7FF4A211D957B00613DE9 /* UIView+KCCommon.m in Sources */,
-				07F7FF4B211D957B00613DE9 /* UIViewController+KCCommon.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
