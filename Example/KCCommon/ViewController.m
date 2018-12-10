@@ -17,7 +17,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    
+    self.title = @"我是标题";
+    
+    
 }
+
+
+
 - (IBAction)alert:(id)sender {
     
     KCAlertView *alertView = [[KCAlertView alloc] init];
@@ -49,7 +57,7 @@
         alertView.showView = view;
     
 //    self.view.kc_alertView.backgroundDismiss = YES;
-    [alertView showInView:self.view];
+    [alertView showInView:self.contentView];
 }
 - (IBAction)actionSheet:(id)sender {
     
@@ -84,7 +92,7 @@
     //    self.view.kc_alertView.showView = view;
     
     alertView.backgroundDismiss = YES;
-    [alertView showInView:self.view];
+    [alertView showInView:self.contentView];
     
 }
 - (IBAction)loading:(id)sender {

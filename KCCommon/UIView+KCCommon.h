@@ -13,10 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UIView (KCCommon)
 
-
 // EmptyView  空view
 @property (nonatomic,strong, readonly) KCEmptyView *kc_emptyView;
-
 
 // ToastView  吐司
 @property (nonatomic,strong,readonly) KCToastView *kc_toastView;

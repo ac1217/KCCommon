@@ -50,28 +50,28 @@
 {
     self.kc_toastView.text = text;
     self.kc_toastView.style = KCToastViewStyleSuccess;
-    [self.kc_toastView showInView:self.view];
+    [self.kc_toastView showInView:self];
 }
 - (void)kc_showErrorToast:(NSString *)text
 {
     
     self.kc_toastView.text = text;
     self.kc_toastView.style = KCToastViewStyleError;
-    [self.kc_toastView showInView:self.view];
+    [self.kc_toastView showInView:self];
 }
 - (void)kc_showLoadingToast:(NSString *)text
 {
     
     self.kc_toastView.text = text;
     self.kc_toastView.style = KCToastViewStyleLoading;
-    [self.kc_toastView showInView:self.view];
+    [self.kc_toastView showInView:self];
 }
 - (void)kc_showInfoToast:(NSString *)text
 {
     
     self.kc_toastView.text = text;
     self.kc_toastView.style = KCToastViewStyleInfo;
-    [self.kc_toastView showInView:self.view];
+    [self.kc_toastView showInView:self];
 }
 - (void)kc_showProgressToast:(float)progress text:(NSString *)text
 {
@@ -79,7 +79,7 @@
     self.kc_toastView.text = text;
     self.kc_toastView.style = KCToastViewStyleProgress;
     self.kc_toastView.progress = progress;
-    [self.kc_toastView showInView:self.view];
+    [self.kc_toastView showInView:self];
 }
 - (void)kc_hideToast
 {
@@ -93,7 +93,7 @@
     self.kc_emptyView.desc = desc;
     self.kc_emptyView.image = image;
     self.kc_emptyView.refreshTitle = rt;
-    [self.kc_emptyView showInView:self.view];
+    [self.kc_emptyView showInView:self];
 }
 
 - (void)kc_hideEmptyState

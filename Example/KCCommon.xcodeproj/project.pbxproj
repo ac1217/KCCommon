@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		071C20BE21BE0B4300D1FB5F /* KCHTTPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 071C20BB21BE0B4300D1FB5F /* KCHTTPManager.m */; };
+		071C20BF21BE0B4300D1FB5F /* UIView+KCCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 071C20BD21BE0B4300D1FB5F /* UIView+KCCommon.m */; };
+		071C20C221BE0B5700D1FB5F /* KCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 071C20C121BE0B5700D1FB5F /* KCViewController.m */; };
+		071C20C521BE0EDB00D1FB5F /* KCScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 071C20C421BE0EDB00D1FB5F /* KCScrollViewController.m */; };
+		071C20C821BE0F1500D1FB5F /* KCTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 071C20C721BE0F1500D1FB5F /* KCTableViewController.m */; };
+		071C20CB21BE0F2100D1FB5F /* KCCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 071C20CA21BE0F2100D1FB5F /* KCCollectionViewController.m */; };
+		071C20CE21BE163700D1FB5F /* KCAppManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 071C20CD21BE163700D1FB5F /* KCAppManager.m */; };
 		07741576211427F400A238BA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 07741575211427F400A238BA /* AppDelegate.m */; };
 		07741579211427F400A238BA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07741578211427F400A238BA /* ViewController.m */; };
 		0774157C211427F400A238BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0774157A211427F400A238BA /* Main.storyboard */; };
@@ -15,7 +22,6 @@
 		07741584211427F500A238BA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 07741583211427F500A238BA /* main.m */; };
 		0774158E211427F500A238BA /* KCCommonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0774158D211427F500A238BA /* KCCommonTests.m */; };
 		07741599211427F600A238BA /* KCCommonUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 07741598211427F600A238BA /* KCCommonUITests.m */; };
-		079C609B219EA093009D7264 /* UIViewController+KCCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 079C609A219EA093009D7264 /* UIViewController+KCCommon.m */; };
 		6BCBCF43D2871F4FD652E916 /* libPods-KCCommon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A2E1BE61A468CF67BE450BEF /* libPods-KCCommon.a */; };
 		9A56CB924AE9C7EFC3D52260 /* libPods-KCCommonTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EFCC72885A7CBEB46D5FCC1 /* libPods-KCCommonTests.a */; };
 		C17DD055D5CE92A8871F3E84 /* libPods-KCCommonUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A602DBFF6ABBAA263B55AA20 /* libPods-KCCommonUITests.a */; };
@@ -39,6 +45,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		071C20B921BE0B4300D1FB5F /* KCCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCCommon.h; sourceTree = "<group>"; };
+		071C20BA21BE0B4300D1FB5F /* UIView+KCCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+KCCommon.h"; sourceTree = "<group>"; };
+		071C20BB21BE0B4300D1FB5F /* KCHTTPManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCHTTPManager.m; sourceTree = "<group>"; };
+		071C20BC21BE0B4300D1FB5F /* KCHTTPManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCHTTPManager.h; sourceTree = "<group>"; };
+		071C20BD21BE0B4300D1FB5F /* UIView+KCCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+KCCommon.m"; sourceTree = "<group>"; };
+		071C20C021BE0B5700D1FB5F /* KCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KCViewController.h; sourceTree = "<group>"; };
+		071C20C121BE0B5700D1FB5F /* KCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KCViewController.m; sourceTree = "<group>"; };
+		071C20C321BE0EDB00D1FB5F /* KCScrollViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KCScrollViewController.h; sourceTree = "<group>"; };
+		071C20C421BE0EDB00D1FB5F /* KCScrollViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KCScrollViewController.m; sourceTree = "<group>"; };
+		071C20C621BE0F1500D1FB5F /* KCTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KCTableViewController.h; sourceTree = "<group>"; };
+		071C20C721BE0F1500D1FB5F /* KCTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KCTableViewController.m; sourceTree = "<group>"; };
+		071C20C921BE0F2100D1FB5F /* KCCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KCCollectionViewController.h; sourceTree = "<group>"; };
+		071C20CA21BE0F2100D1FB5F /* KCCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KCCollectionViewController.m; sourceTree = "<group>"; };
+		071C20CC21BE163700D1FB5F /* KCAppManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KCAppManager.h; sourceTree = "<group>"; };
+		071C20CD21BE163700D1FB5F /* KCAppManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KCAppManager.m; sourceTree = "<group>"; };
 		07741571211427F400A238BA /* KCCommon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KCCommon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07741574211427F400A238BA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		07741575211427F400A238BA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -55,8 +76,6 @@
 		07741594211427F600A238BA /* KCCommonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KCCommonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		07741598211427F600A238BA /* KCCommonUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KCCommonUITests.m; sourceTree = "<group>"; };
 		0774159A211427F600A238BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		079C6099219EA093009D7264 /* UIViewController+KCCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+KCCommon.h"; sourceTree = "<group>"; };
-		079C609A219EA093009D7264 /* UIViewController+KCCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+KCCommon.m"; sourceTree = "<group>"; };
 		0E0DB9C4FB963E2A04B0681D /* Pods-KCCommon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KCCommon.release.xcconfig"; path = "Pods/Target Support Files/Pods-KCCommon/Pods-KCCommon.release.xcconfig"; sourceTree = "<group>"; };
 		51A7F4AB7A8B08B71617667F /* Pods-KCCommonTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KCCommonTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KCCommonTests/Pods-KCCommonTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8EFCC72885A7CBEB46D5FCC1 /* libPods-KCCommonTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KCCommonTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -156,8 +175,21 @@
 		079C6098219EA093009D7264 /* KCCommon */ = {
 			isa = PBXGroup;
 			children = (
-				079C6099219EA093009D7264 /* UIViewController+KCCommon.h */,
-				079C609A219EA093009D7264 /* UIViewController+KCCommon.m */,
+				071C20B921BE0B4300D1FB5F /* KCCommon.h */,
+				071C20BC21BE0B4300D1FB5F /* KCHTTPManager.h */,
+				071C20BB21BE0B4300D1FB5F /* KCHTTPManager.m */,
+				071C20BA21BE0B4300D1FB5F /* UIView+KCCommon.h */,
+				071C20BD21BE0B4300D1FB5F /* UIView+KCCommon.m */,
+				071C20C021BE0B5700D1FB5F /* KCViewController.h */,
+				071C20C121BE0B5700D1FB5F /* KCViewController.m */,
+				071C20C321BE0EDB00D1FB5F /* KCScrollViewController.h */,
+				071C20C421BE0EDB00D1FB5F /* KCScrollViewController.m */,
+				071C20C621BE0F1500D1FB5F /* KCTableViewController.h */,
+				071C20C721BE0F1500D1FB5F /* KCTableViewController.m */,
+				071C20C921BE0F2100D1FB5F /* KCCollectionViewController.h */,
+				071C20CA21BE0F2100D1FB5F /* KCCollectionViewController.m */,
+				071C20CC21BE163700D1FB5F /* KCAppManager.h */,
+				071C20CD21BE163700D1FB5F /* KCAppManager.m */,
 			);
 			name = KCCommon;
 			path = ../../KCCommon;
@@ -472,10 +504,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				071C20C821BE0F1500D1FB5F /* KCTableViewController.m in Sources */,
+				071C20CE21BE163700D1FB5F /* KCAppManager.m in Sources */,
 				07741579211427F400A238BA /* ViewController.m in Sources */,
-				079C609B219EA093009D7264 /* UIViewController+KCCommon.m in Sources */,
+				071C20C221BE0B5700D1FB5F /* KCViewController.m in Sources */,
+				071C20BF21BE0B4300D1FB5F /* UIView+KCCommon.m in Sources */,
+				071C20CB21BE0F2100D1FB5F /* KCCollectionViewController.m in Sources */,
 				07741584211427F500A238BA /* main.m in Sources */,
 				07741576211427F400A238BA /* AppDelegate.m in Sources */,
+				071C20BE21BE0B4300D1FB5F /* KCHTTPManager.m in Sources */,
+				071C20C521BE0EDB00D1FB5F /* KCScrollViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -646,8 +684,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2Y52UEM99S;
+				DEVELOPMENT_TEAM = 9W8KXJ7KY8;
 				INFOPLIST_FILE = KCCommon/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -664,8 +703,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2Y52UEM99S;
+				DEVELOPMENT_TEAM = 9W8KXJ7KY8;
 				INFOPLIST_FILE = KCCommon/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

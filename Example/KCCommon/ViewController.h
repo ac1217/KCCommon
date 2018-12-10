@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "KCCommon.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : KCViewController
 
 
 @end

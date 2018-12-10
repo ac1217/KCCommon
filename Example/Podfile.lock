@@ -1,12 +1,29 @@
 PODS:
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
   - KCComponent (0.0.1)
 
 DEPENDENCIES:
+  - AFNetworking
   - KCComponent
 
 SPEC CHECKSUMS:
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   KCComponent: c583d3e388cc9204b2b0ce03663e61a6f8694cd9
 
-PODFILE CHECKSUM: 27287992616541c16ca58f153983c736fc6513be
+PODFILE CHECKSUM: 7042c25242f8b8c59e7f23b12097c95a83eea2b5
 
 COCOAPODS: 1.3.1

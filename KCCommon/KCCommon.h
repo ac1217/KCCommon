@@ -6,6 +6,11 @@
 //  Copyright © 2018 Erica. All rights reserved.
 //
 
-#import "UIViewController+KCCommon.h"
-#import "KCHTTPManager.h"
 #import "UIView+KCCommon.h"
+#import "KCViewController.h"
+#import "KCTableViewController.h"
+#import "KCScrollViewController.h"
+#import "KCCollectionViewController.h"
+
+#import "KCHTTPManager.h"
+#import "KCAppManager.h"
